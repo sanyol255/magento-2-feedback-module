@@ -1,0 +1,29 @@
+<?php
+/** @var $block \SportStore\CustomerFeedback\Block\Adminhtml\FeedbackDetailsBlock */
+?>
+<table class="data-grid">
+    <thead>
+        <tr>
+            <th class="data-grid-th"><?= __('First name'); ?></th>
+            <th class="data-grid-th"><?= __('Last name'); ?></th>
+            <th class="data-grid-th"><?= __('Age'); ?></th>
+            <th class="data-grid-th"><?= __('Email'); ?></th>
+            <th class="data-grid-th"><?= __('Title'); ?></th>
+            <th class="data-grid-th"><?= __('Message'); ?></th>
+            <th class="data-grid-th"><?= __('Status'); ?></th>
+            <th class="data-grid-th"><?= __('Answer'); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><?= $block->getFirstname(); ?></td>
+            <td><?= $block->getLastname(); ?></td>
+            <td><?= $block->getAge(); ?></td>
+            <td><?= $block->getEmail(); ?></td>
+            <td><?= $block->getTitle(); ?></td>
+            <td><?= $block->getMessage(); ?></td>
+            <td><?= $block->getStatusTitle(); ?></td>
+            <td><?= $block->getAnswer(); ?></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="SportStore_CustomerFeedback::feedback_menu"
+             title="Customers Feedbacks"
+             module="SportStore_CustomerFeedback"
+             resource="SportStore_CustomerFeedback::feedback"
+             translate="title toolTip"
+             sortOrder="50"
+             toolTip="Feedbacks" />
+            <add id="SportStore_CustomerFeedback::feedback_menu_grid"
+                 title="List of Feedbacks"
+                 module="SportStore_CustomerFeedback"
+                 resource="SportStore_CustomerFeedback::feedback_grid"
+                 translate="title"
+                 parent="SportStore_CustomerFeedback::feedback_menu"
+                 action="customerfeed/feedback/index" />
+    </menu>
+</config>
