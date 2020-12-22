@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Feedback Form</title>
+    </head>
+    <body>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="wishlist_sidebar" remove="true" />
+        <referenceContainer name="content">
+            <block class="SportStore\CustomerFeedback\Block\FeedbackFormBlock" name="feedback_form"
+                   template="SportStore_CustomerFeedback::feedback_form.phtml" />
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="feedbacks_listing_source" xsi:type="string">feedbacksCollection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="feedbacksCollection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">customers_feedbacks</argument>
+            <argument name="resourceModel" xsi:type="string">SportStore\CustomerFeedback\Model\ResourceModel\Feedback</argument>
+        </arguments>
+    </virtualType>
+</config>
